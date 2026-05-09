@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>L'Hydrogène Moléculaire — 1500 études. Une seule vérité. | Kayzen</title>
+<meta name="description" content="Le guide scientifique pour comprendre la molécule qui révolutionne la santé cellulaire. Par Yori, fondateur de Kayzen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --kz-bg: #F5F2ED;
+  --kz-bg-dark: #0E0E0E;
+  --kz-text: #0E0E0E;
+  --kz-text-soft: #5A5A5A;
+  --kz-text-muted: #888888;
+  --kz-text-light: #EFEFEF;
+  --kz-accent: #5BA8D4;
+  --kz-accent-dark: #1A4A5F;
+  --kz-accent-light: rgba(91, 168, 212, 0.12);
+  --kz-line: rgba(14, 14, 14, 0.10);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--kz-bg);
+  color: var(--kz-text);
+  line-height: 1.6;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, svg { max-width: 100%; display: block; }
+
+/* ============ NAVIGATION ============ */
+.kz-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(245, 242, 237, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--kz-line);
+  padding: 14px 24px;
+}
+.kz-nav__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.kz-nav__brand {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 4px;
+  color: var(--kz-text);
+}
+.kz-nav__progress {
+  flex: 1;
+  max-width: 400px;
+  height: 3px;
+  background: rgba(91, 168, 212, 0.15);
+  border-radius: 100px;
+  overflow: hidden;
+}
+.kz-nav__progress-bar {
+  height: 100%;
+  width: 0;
+  background: var(--kz-accent);
+  transition: width 0.2s ease;
+  border-radius: 100px;
+}
+.kz-nav__cta {
+  background: var(--kz-accent);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.25s ease;
+}
+.kz-nav__cta:hover { background: var(--kz-accent-dark); }
+
+/* ============ PAGE LAYOUT ============ */
+.kz-page {
+  min-height: 100vh;
+  padding: 100px 24px 80px;
+  position: relative;
+}
+.kz-page__inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.kz-page__number {
+  position: absolute;
+  bottom: 24px;
+  right: 32px;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--kz-text-muted);
+  font-family: 'Space Grotesk', sans-serif;
+}
+.kz-page--dark {
+  background: var(--kz-bg-dark);
+  color: var(--kz-text-light);
+}
+.kz-page--dark .kz-page__number {
+  color: rgba(239, 239, 239, 0.5);
+}
+.kz-page--cover {
+  background: linear-gradient(135deg, #0E0E0E 0%, #1A4A5F 100%);
+  color: var(--kz-text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 120px;
+}
+
+/* ============ TYPO ============ */
+.kz-pretitle {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  color: var(--kz-accent);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.kz-page--dark .kz-pretitle { color: var(--kz-accent); }
+.kz-h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  margin-bottom: 24px;
+}
+.kz-h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+.kz-h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 14px;
+  margin-top: 32px;
+}
+.kz-lead {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--kz-text-soft);
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+.kz-page--dark .kz-lead { color: rgba(239, 239, 239, 0.85); }
+.kz-p {
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 18px;
+  color: var(--kz-text);
+}
+.kz-page--dark .kz-p { color: rgba(239, 239, 239, 0.9); }
+.kz-p strong { font-weight: 600; color: var(--kz-text); }
+.kz-page--dark .kz-p strong { color: var(--kz-text-light); }
+.kz-p em { font-style: italic; color: var(--kz-accent-dark); font-weight: 500; }
+.kz-page--dark .kz-p em { color: var(--kz-accent); }
+
+/* ============ COMPONENTS ============ */
+.kz-divider {
+  width: 60px;
+  height: 2px;
+  background: var(--kz-accent);
+  margin: 32px 0;
+  border-radius: 100px;
+}
+.kz-page--dark .kz-divider { background: var(--kz-accent); }
+
+.kz-quote {
+  border-left: 3px solid var(--kz-accent);
+  padding: 8px 0 8px 22px;
+  margin: 32px 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: var(--kz-text);
+  font-style: italic;
+}
+.kz-page--dark .kz-quote { color: var(--kz-text-light); }
+.kz-quote__author {
+  display: block;
+  margin-top: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--kz-text-muted);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.kz-stat {
+  background: var(--kz-accent-light);
+  border: 1px solid rgba(91, 168, 212, 0.2);
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: center;
+  margin: 32px 0;
+}
+.kz-page--dark .kz-stat {
+  background: rgba(91, 168, 212, 0.1);
+  border-color: rgba(91, 168, 212, 0.3);
+}
+.kz-stat__number {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 56px;
+  font-weight: 300;
+  color: var(--kz-accent);
+  line-height: 1;
+  margin-bottom: 8px;
+  letter-spacing: -2px;
+}
+.kz-stat__label {
+  font-size: 14px;
+  color: var(--kz-text-soft);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+.kz-page--dark .kz-stat__label { color: rgba(239, 239, 239, 0.7); }
+
+.kz-callout {
+  background: white;
+  border-left: 3px solid var(--kz-accent);
+  padding: 24px 28px;
+  border-radius: 8px;
+  margin: 32px 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+.kz-page--dark .kz-callout {
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: none;
+}
+.kz-callout__title {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--kz-accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.kz-callout__body {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--kz-text);
+}
+.kz-page--dark .kz-callout__body { color: rgba(239, 239, 239, 0.9); }
+
+.kz-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+}
+.kz-list li {
+  padding: 12px 0 12px 36px;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.6;
+  border-bottom: 1px solid var(--kz-line);
+}
+.kz-page--dark .kz-list li { border-color: rgba(255, 255, 255, 0.1); }
+.kz-list li:last-child { border: none; }
+.kz-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  color: var(--kz-accent);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.kz-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+}
+.kz-checklist li {
+  padding: 10px 0 10px 36px;
+  position: relative;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.kz-checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 22px;
+  height: 22px;
+  background: var(--kz-accent);
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kz-study {
+  background: white;
+  border: 1px solid var(--kz-line);
+  border-radius: 12px;
+  padding: 22px 24px;
+  margin: 24px 0;
+}
+.kz-page--dark .kz-study {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.kz-study__tag {
+  display: inline-block;
+  background: var(--kz-accent-light);
+  color: var(--kz-accent-dark);
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.kz-page--dark .kz-study__tag {
+  background: rgba(91, 168, 212, 0.15);
+  color: var(--kz-accent);
+}
+.kz-study__title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+.kz-study__source {
+  font-size: 12px;
+  color: var(--kz-text-muted);
+  font-style: italic;
+}
+
+.kz-cta-box {
+  background: linear-gradient(135deg, #0E0E0E 0%, #1A4A5F 100%);
+  color: white;
+  padding: 48px 40px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 40px 0;
+}
+.kz-cta-box__title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+.kz-cta-box__sub {
+  font-size: 15px;
+  opacity: 0.85;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+.kz-cta-box__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--kz-accent);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 100px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 24px rgba(91, 168, 212, 0.3);
+}
+.kz-cta-box__button:hover {
+  background: white;
+  color: var(--kz-accent-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(91, 168, 212, 0.4);
+}
+
+/* ============ ILLUSTRATIONS ============ */
+.kz-illu {
+  margin: 32px 0;
+  padding: 32px 24px;
+  background: white;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid var(--kz-line);
+}
+.kz-page--dark .kz-illu {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ============ COVER PAGE ============ */
+.kz-cover__edition {
+  font-size: 11px;
+  letter-spacing: 0.4em;
+  color: var(--kz-accent);
+  margin-bottom: 32px;
+  font-weight: 600;
+}
+.kz-cover__title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(48px, 8vw, 96px);
+  font-weight: 300;
+  line-height: 0.95;
+  letter-spacing: -3px;
+  margin-bottom: 24px;
+  max-width: 900px;
+}
+.kz-cover__subtitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(239, 239, 239, 0.7);
+  max-width: 600px;
+  margin: 0 auto 48px;
+  line-height: 1.4;
+}
+.kz-cover__author {
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  color: rgba(239, 239, 239, 0.6);
+  text-transform: uppercase;
+  margin-top: 80px;
+}
+
+.kz-cover__molecule {
+  margin: 60px auto 40px;
+  width: 200px;
+  height: 100px;
+  position: relative;
+}
+.kz-cover__atom {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  top: 10px;
+  background: radial-gradient(circle at 35% 35%, #A8D4ED, #5BA8D4 50%, #1A4A5F);
+  box-shadow: 0 0 40px rgba(91, 168, 212, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+}
+.kz-cover__atom--left { left: 0; }
+.kz-cover__atom--right { right: 0; }
+.kz-cover__bond {
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  right: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #1A4A5F, #5BA8D4, #1A4A5F);
+  transform: translateY(-50%);
+  border-radius: 100px;
+}
+
+/* ============ TOC ============ */
+.kz-toc {
+  margin: 32px 0;
+}
+.kz-toc__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--kz-line);
+  text-decoration: none;
+  color: var(--kz-text);
+  transition: padding 0.25s ease;
+}
+.kz-toc__item:hover {
+  padding-left: 8px;
+}
+.kz-toc__num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px;
+  color: var(--kz-accent);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  min-width: 60px;
+}
+.kz-toc__title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  flex: 1;
+  padding: 0 16px;
+}
+.kz-toc__page {
+  font-size: 13px;
+  color: var(--kz-text-muted);
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* ============ SIGNATURE ============ */
+.kz-signature {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--kz-line);
+}
+.kz-signature__name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--kz-text);
+  margin-bottom: 4px;
+  font-style: italic;
+}
+.kz-signature__role {
+  font-size: 13px;
+  color: var(--kz-text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+  .kz-page { padding: 90px 20px 60px; }
+  .kz-page__number { right: 20px; bottom: 16px; }
+  .kz-cta-box { padding: 36px 24px; }
+  .kz-cta-box__title { font-size: 24px; }
+  .kz-quote { font-size: 19px; }
+  .kz-stat__number { font-size: 44px; }
+  .kz-cover__atom { width: 60px; height: 60px; font-size: 28px; }
+  .kz-cover__molecule { width: 160px; height: 80px; }
+  .kz-cover__bond { left: 60px; right: 60px; }
+  .kz-nav__progress { display: none; }
+}
+
+/* ============ PRINT (PDF) ============ */
+@media print {
+  .kz-nav { display: none; }
+  .kz-page { page-break-after: always; min-height: auto; padding: 60px 40px; }
+  .kz-page--cover { page-break-after: always; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="kz-nav">
+  <div class="kz-nav__inner">
+    <span class="kz-nav__brand">KAYZEN°</span>
+    <div class="kz-nav__progress">
+      <div class="kz-nav__progress-bar" id="progressBar"></div>
+    </div>
+    <a href="https://kayzenwater.com/products/kayzen-origin" class="kz-nav__cta" target="_blank">Découvrir Kayzen</a>
+  </div>
+</nav>
+
+<!-- ============ PAGE 1 — COVER ============ -->
+<section class="kz-page kz-page--cover">
+  <div class="kz-page__inner">
+    <div class="kz-cover__edition">ÉDITION 2026 · VOL. 01</div>
+    <div class="kz-cover__molecule">
+      <div class="kz-cover__atom kz-cover__atom--left">H</div>
+      <div class="kz-cover__bond"></div>
+      <div class="kz-cover__atom kz-cover__atom--right">H</div>
+    </div>
+    <h1 class="kz-cover__title">L'Hydrogène Moléculaire</h1>
+    <p class="kz-cover__subtitle">1500 études. Une seule vérité.</p>
+    <div class="kz-cover__author">Par Yori — Fondateur Kayzen</div>
+  </div>
+  <span class="kz-page__number">01</span>
+</section>
+
+<!-- ============ PAGE 2 — INTRO YORI ============ -->
+<section class="kz-page">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Avant de commencer</span>
+    <h2 class="kz-h1">Pourquoi je vous écris ce guide.</h2>
+    <div class="kz-divider"></div>
+    <p class="kz-lead">Si vous tenez ce guide entre les mains, c'est que vous avez compris quelque chose que la majorité ignore encore : <strong>on ne soigne pas le corps après. On le préserve avant.</strong></p>
+    <p class="kz-p">Je m'appelle Yori. J'ai 33 ans. Et j'ai créé Kayzen après avoir compté <strong>trop de tombes pour mon âge</strong>.</p>
+    <p class="kz-p">Trois personnes que j'aimais sont parties à cause d'un cancer. Une autre à cause d'Alzheimer. Et un proche s'en est sorti — mais avec un cancer comme cicatrice. Cinq drames. Cinq personnes différentes. Et à chaque fois, la même question, à voix basse : <em>« Si on avait su plus tôt… »</em></p>
+    <p class="kz-p">À 33 ans, j'ai compris une chose qui devrait être évidente, et qui pourtant ne l'est pas pour la majorité : <strong>on ne tombe pas malade par hasard</strong>. Le corps prévient. Pendant des années. À travers la fatigue, l'inflammation, les douleurs, la mémoire qui flanche. Et personne n'écoute. <em>Moi le premier, pendant longtemps.</em></p>
+    <p class="kz-p">Pendant deux ans, j'ai lu. J'ai cherché. J'ai rencontré des médecins, des chercheurs, des chefs d'entreprise qui se sont sortis du chaos en reprenant le contrôle de leur biologie. Tous m'ont parlé d'une chose : <strong>l'oxydation cellulaire</strong>, et de la molécule la plus efficace pour la combattre — l'hydrogène moléculaire.</p>
+    <p class="kz-p">Ce guide est le condensé de ce que j'ai appris. <strong>Pas une promesse miracle.</strong> Une lecture honnête, scientifique, qui vous fera comprendre pourquoi 1 500 études convergent vers la même conclusion.</p>
+    <p class="kz-p">Lisez-le calmement. Prenez ce qui vous parle. Et faites votre propre décision — celle que je n'ai pas pu prendre pour les personnes que j'aimais.</p>
+    <div class="kz-signature">
+      <div class="kz-signature__name">Yori</div>
+      <div class="kz-signature__role">Fondateur Kayzen</div>
+    </div>
+  </div>
+  <span class="kz-page__number">02</span>
+</section>
+
+<!-- ============ PAGE 3 — TOC ============ -->
+<section class="kz-page">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Sommaire</span>
+    <h2 class="kz-h1">Ce que vous allez découvrir.</h2>
+    <div class="kz-divider"></div>
+    <div class="kz-toc">
+      <a href="#chap1" class="kz-toc__item">
+        <span class="kz-toc__num">CHAP. 01</span>
+        <span class="kz-toc__title">L'ennemi invisible qui vous fait vieillir</span>
+        <span class="kz-toc__page">04</span>
+      </a>
+      <a href="#chap2" class="kz-toc__item">
+        <span class="kz-toc__num">CHAP. 02</span>
+        <span class="kz-toc__title">L'hydrogène moléculaire en 5 minutes</span>
+        <span class="kz-toc__page">08</span>
+      </a>
+      <a href="#chap3" class="kz-toc__item">
+        <span class="kz-toc__num">CHAP. 03</span>
+        <span class="kz-toc__title">Énergie cellulaire & récupération sportive</span>
+        <span class="kz-toc__page">13</span>
+      </a>
+      <a href="#chap4" class="kz-toc__item">
+        <span class="kz-toc__num">CHAP. 04</span>
+        <span class="kz-toc__title">Sommeil profond & système nerveux</span>
+        <span class="kz-toc__page">18</span>
+      </a>
+      <a href="#chap5" class="kz-toc__item">
+        <span class="kz-toc__num">CHAP. 05</span>
+        <span class="kz-toc__title">Clarté mentale & focus stable</span>
+        <span class="kz-toc__page">22</span>
+      </a>
+      <a href="#chap6" class="kz-toc__item">
+        <span class="kz-toc__num">CHAP. 06</span>
+        <span class="kz-toc__title">Confort articulaire & mobilité</span>
+        <span class="kz-toc__page">26</span>
+      </a>
+      <a href="#chap7" class="kz-toc__item">
+        <span class="kz-toc__num">CHAP. 07</span>
+        <span class="kz-toc__title">Le Rituel Kayzen — passer à l'action</span>
+        <span class="kz-toc__page">29</span>
+      </a>
+    </div>
+  </div>
+  <span class="kz-page__number">03</span>
+</section>
+
+<!-- ============ CHAPITRE 1 — L'ENNEMI INVISIBLE ============ -->
+<section class="kz-page kz-page--dark" id="chap1">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 01</span>
+    <h2 class="kz-h1">L'ennemi invisible qui vous fait vieillir.</h2>
+    <div class="kz-divider"></div>
+    <p class="kz-lead">Vous ne le voyez pas. Vous ne le sentez pas. Et pourtant, à chaque seconde, des milliards de petites bombes attaquent vos cellules. On les appelle les <strong>radicaux libres</strong>.</p>
+    <p class="kz-p">Imaginez une pomme coupée en deux. Quelques minutes après, elle brunit. C'est exactement ce qui se passe à l'intérieur de votre corps, jour après jour. <em>L'oxydation.</em></p>
+    <div class="kz-illu">
+      <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="max-width: 320px; margin: 0 auto;">
+        <circle cx="80" cy="100" r="50" fill="none" stroke="#5BA8D4" stroke-width="2" opacity="0.3"/>
+        <circle cx="80" cy="100" r="35" fill="none" stroke="#5BA8D4" stroke-width="2"/>
+        <circle cx="80" cy="100" r="8" fill="#5BA8D4"/>
+        <text x="80" y="180" text-anchor="middle" fill="#A8D4ED" font-size="12" font-family="Inter">Cellule saine</text>
+        <line x1="160" y1="100" x2="220" y2="100" stroke="#5BA8D4" stroke-width="2" stroke-dasharray="4 4"/>
+        <polygon points="220,95 230,100 220,105" fill="#5BA8D4"/>
+        <circle cx="320" cy="100" r="50" fill="none" stroke="#C9342B" stroke-width="2" opacity="0.5"/>
+        <path d="M 285 65 L 295 75 M 295 65 L 285 75 M 350 70 L 358 78 M 358 70 L 350 78 M 290 130 L 300 138 M 300 130 L 290 138" stroke="#C9342B" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="320" cy="100" r="6" fill="#C9342B"/>
+        <text x="320" y="180" text-anchor="middle" fill="#C9342B" font-size="12" font-family="Inter">Cellule oxydée</text>
+      </svg>
+    </div>
+    <h3 class="kz-h3">D'où viennent ces radicaux libres ?</h3>
+    <ul class="kz-list">
+      <li><strong>Stress chronique</strong> — le cortisol en libère par milliards.</li>
+      <li><strong>Pollution & métaux lourds</strong> — chaque respiration urbaine en fabrique.</li>
+      <li><strong>Alcool, tabac, sucres rapides</strong> — accélérateurs majeurs.</li>
+      <li><strong>UV, écrans bleus, ondes</strong> — dégradent l'ADN cellulaire.</li>
+      <li><strong>Sport intense sans récup</strong> — paradoxalement, source d'oxydation.</li>
+    </ul>
+  </div>
+  <span class="kz-page__number">04</span>
+</section>
+
+<!-- ============ PAGE 5 — SUITE CHAP 1 ============ -->
+<section class="kz-page kz-page--dark">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 01 · Suite</span>
+    <h2 class="kz-h2">Ce que l'oxydation déclenche dans votre corps.</h2>
+    <p class="kz-p">L'oxydation chronique, ce n'est pas un mot abstrait. C'est <strong>la racine biologique de presque toutes les maladies modernes</strong>.</p>
+    <div class="kz-stat">
+      <div class="kz-stat__number">90%</div>
+      <div class="kz-stat__label">des maladies chroniques sont liées au stress oxydatif</div>
+    </div>
+    <p class="kz-p">Voici concrètement ce que l'oxydation produit, année après année :</p>
+    <ul class="kz-list">
+      <li><strong>Vieillissement accéléré</strong> de la peau, des organes, des fonctions cognitives.</li>
+      <li><strong>Inflammation chronique</strong> — le terrain préféré des cancers, de l'arthrose, du diabète.</li>
+      <li><strong>Fatigue persistante</strong> — vos mitochondries (les "centrales énergétiques" de vos cellules) s'épuisent.</li>
+      <li><strong>Brouillard mental</strong> — votre cerveau consomme 20 % de votre oxygène, donc subit 20 % de l'oxydation.</li>
+      <li><strong>Récupération qui ralentit</strong> — vos tissus mettent plus de temps à se réparer.</li>
+    </ul>
+    <div class="kz-callout">
+      <div class="kz-callout__title">À retenir</div>
+      <p class="kz-callout__body">Vous ne vieillissez pas. <strong>Vous vous oxydez.</strong> Et tant que vous ne neutralisez pas cette oxydation, aucun complément, aucun régime, aucune cure ne vous redonnera votre vitalité de 25 ans.</p>
+    </div>
+  </div>
+  <span class="kz-page__number">05</span>
+</section>
+
+<!-- ============ PAGE 6 — CHAP 1 SUITE ============ -->
+<section class="kz-page kz-page--dark">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 01 · Suite</span>
+    <h2 class="kz-h2">Pourquoi vos antioxydants habituels ne suffisent plus.</h2>
+    <p class="kz-p">Vous mangez des fruits. Vous prenez de la vitamine C. Vous buvez du thé vert. Vous faites bien.</p>
+    <p class="kz-p">Mais voici le problème que personne ne vous a jamais expliqué : <strong>la majorité des antioxydants classiques ne traversent pas la barrière cellulaire.</strong></p>
+    <div class="kz-illu">
+      <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" style="max-width: 360px; margin: 0 auto;">
+        <ellipse cx="200" cy="110" rx="130" ry="90" fill="none" stroke="#5BA8D4" stroke-width="2" opacity="0.4"/>
+        <text x="200" y="50" text-anchor="middle" fill="#A8D4ED" font-size="11" font-family="Inter" letter-spacing="2">MEMBRANE CELLULAIRE</text>
+        <circle cx="60" cy="110" r="14" fill="#C9342B" opacity="0.6"/>
+        <text x="60" y="145" text-anchor="middle" fill="#C9342B" font-size="10" font-family="Inter">Vit. C</text>
+        <line x1="74" y1="110" x2="100" y2="110" stroke="#C9342B" stroke-width="2"/>
+        <text x="120" y="105" fill="#C9342B" font-size="20">✕</text>
+        <circle cx="340" cy="110" r="10" fill="#5BA8D4"/>
+        <text x="340" y="145" text-anchor="middle" fill="#5BA8D4" font-size="10" font-family="Inter">H₂</text>
+        <line x1="200" y1="110" x2="328" y2="110" stroke="#5BA8D4" stroke-width="2" stroke-dasharray="3 3"/>
+        <text x="200" y="200" text-anchor="middle" fill="#A8D4ED" font-size="12" font-family="Inter" font-style="italic">Seul l'hydrogène traverse partout — sang, cerveau, ADN</text>
+      </svg>
+    </div>
+    <p class="kz-p">La vitamine C, le glutathion, la coenzyme Q10 — ce sont de grosses molécules. Elles sont efficaces dans le sang, oui. <strong>Mais elles ne pénètrent pas l'intérieur des cellules</strong>, là où la bataille se joue vraiment.</p>
+    <div class="kz-stat">
+      <div class="kz-stat__number">88×</div>
+      <div class="kz-stat__label">L'hydrogène moléculaire est plus petit que la vitamine C</div>
+    </div>
+    <p class="kz-p">L'hydrogène, lui, est <strong>la plus petite molécule de l'univers</strong>. Il traverse la membrane cellulaire, la barrière hémato-encéphalique (le filtre du cerveau), et même l'ADN.</p>
+    <p class="kz-p"><em>C'est comme la différence entre arroser un jardin de l'extérieur ou diffuser l'eau directement dans chaque racine.</em></p>
+  </div>
+  <span class="kz-page__number">06</span>
+</section>
+
+<!-- ============ PAGE 7 — CHAP 1 FIN ============ -->
+<section class="kz-page kz-page--dark">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 01 · Conclusion</span>
+    <h2 class="kz-h2">Le constat est simple.</h2>
+    <p class="kz-lead">Vous êtes en train de vous oxyder, comme tout le monde. Mais vous avez aujourd'hui une option que personne n'avait il y a 20 ans : <strong>l'hydrogène moléculaire.</strong></p>
+    <p class="kz-p">Dans le chapitre suivant, on va voir <strong>ce qu'est exactement cette molécule, comment elle agit, et pourquoi 1 500 études convergent vers la même conclusion.</strong></p>
+    <div class="kz-quote">
+      « L'hydrogène moléculaire pourrait bien être le composé le plus prometteur de la médecine préventive du XXIe siècle. »
+      <span class="kz-quote__author">— Dr. Shigeo Ohta, Université Médicale Nippon, Tokyo</span>
+    </div>
+    <p class="kz-p">Page suivante : <em>l'hydrogène en 5 minutes.</em></p>
+  </div>
+  <span class="kz-page__number">07</span>
+</section>
+
+<!-- ============ CHAPITRE 2 ============ -->
+<section class="kz-page" id="chap2">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 02</span>
+    <h2 class="kz-h1">L'hydrogène moléculaire, en 5 minutes.</h2>
+    <div class="kz-divider"></div>
+    <p class="kz-lead">Pas de jargon. Pas de blabla scientifique imbuvable. Voici ce que vous devez savoir, simplement.</p>
+    <h3 class="kz-h3">C'est quoi, exactement ?</h3>
+    <p class="kz-p">L'hydrogène moléculaire (noté <strong>H₂</strong>) est <strong>deux atomes d'hydrogène liés ensemble</strong>. C'est le gaz le plus simple, le plus petit et le plus abondant de l'univers.</p>
+    <p class="kz-p">Quand vous l'absorbez (en buvant une eau enrichie), il diffuse dans votre corps en quelques minutes. Il atteint chaque cellule, chaque organe, chaque tissu. Et là, il fait quelque chose que <strong>aucun autre antioxydant ne peut faire :</strong></p>
+    <div class="kz-callout">
+      <div class="kz-callout__title">Sa signature unique</div>
+      <p class="kz-callout__body">L'hydrogène <strong>cible uniquement les radicaux libres les plus dangereux</strong> (le radical hydroxyle <em>•OH</em> et le peroxynitrite <em>ONOO⁻</em>) et <strong>ignore les autres</strong>. Il ne perturbe pas votre métabolisme. Il ne crée aucun déchet. Il ne s'accumule pas.</p>
+    </div>
+    <p class="kz-p">Le sous-produit de son action ? <strong>De l'eau.</strong> Rien d'autre.</p>
+  </div>
+  <span class="kz-page__number">08</span>
+</section>
+
+<!-- ============ PAGE 9 — CHAP 2 ============ -->
+<section class="kz-page">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 02 · Suite</span>
+    <h2 class="kz-h2">L'avalanche scientifique : 1 500 études en 18 ans.</h2>
+    <p class="kz-p">En 2007, un chercheur japonais — le Dr. Shigeo Ohta — publie une étude dans <strong>Nature Medicine</strong>, l'une des revues scientifiques les plus prestigieuses du monde. Le titre : <em>« Hydrogen acts as a therapeutic antioxidant by selectively reducing cytotoxic oxygen radicals »</em>.</p>
+    <p class="kz-p">Ce papier déclenche une avalanche. <strong>Depuis, plus de 1 500 études</strong> ont été publiées sur l'hydrogène moléculaire dans des journaux peer-reviewed. <strong>170 maladies différentes</strong> ont été testées. Les résultats sont systématiquement positifs ou neutres — jamais nocifs.</p>
+    <div class="kz-stat">
+      <div class="kz-stat__number">1500+</div>
+      <div class="kz-stat__label">Études peer-reviewed publiées depuis 2007</div>
+    </div>
+    <h3 class="kz-h3">Pourquoi vous n'en avez jamais entendu parler ?</h3>
+    <p class="kz-p">Parce que <strong>l'hydrogène ne se vend pas comme un médicament</strong>. Il n'y a pas de brevet à déposer (l'eau plus l'hydrogène, c'est universel). Il n'y a pas de marketing pharmaceutique massif derrière. Et la France, comme souvent en santé préventive, accuse 5 à 10 ans de retard sur le Japon, les USA et l'Asie du Sud-Est.</p>
+    <p class="kz-p">Au Japon, l'eau hydrogénée est <strong>remboursée par la sécurité sociale</strong> dans certaines indications. Aux États-Unis, des cliniques de longévité haut de gamme la prescrivent à 800 $ la séance.</p>
+    <p class="kz-p">Et nous ? On commence à peine à découvrir.</p>
+  </div>
+  <span class="kz-page__number">09</span>
+</section>
+
+<!-- ============ PAGE 10 — CHAP 2 ============ -->
+<section class="kz-page">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 02 · Études clés</span>
+    <h2 class="kz-h2">5 études marquantes que vous devez connaître.</h2>
+    <div class="kz-study">
+      <span class="kz-study__tag">Énergie & Fatigue</span>
+      <h4 class="kz-study__title">Réduction significative de la fatigue chronique sur 8 semaines de supplémentation</h4>
+      <p class="kz-study__source">Ito et al., 2011 — Medical Gas Research</p>
+    </div>
+    <div class="kz-study">
+      <span class="kz-study__tag">Récupération sportive</span>
+      <h4 class="kz-study__title">L'eau hydrogénée diminue l'acide lactique et accélère la récupération musculaire chez les athlètes</h4>
+      <p class="kz-study__source">Aoki et al., 2012 — Medical Gas Research</p>
+    </div>
+    <div class="kz-study">
+      <span class="kz-study__tag">Cerveau & Cognition</span>
+      <h4 class="kz-study__title">Effets neuroprotecteurs de l'H₂ sur la mémoire et la concentration</h4>
+      <p class="kz-study__source">Nagata et al., 2009 — Brain Research</p>
+    </div>
+    <div class="kz-study">
+      <span class="kz-study__tag">Inflammation</span>
+      <h4 class="kz-study__title">Diminution mesurable des marqueurs inflammatoires chez les patients atteints de polyarthrite</h4>
+      <p class="kz-study__source">Ishibashi et al., 2012 — Medical Gas Research</p>
+    </div>
+    <div class="kz-study">
+      <span class="kz-study__tag">Métabolisme</span>
+      <h4 class="kz-study__title">Amélioration des marqueurs du syndrome métabolique en 8 semaines</h4>
+      <p class="kz-study__source">Nakao et al., 2010 — Journal of Clinical Biochemistry and Nutrition</p>
+    </div>
+  </div>
+  <span class="kz-page__number">10</span>
+</section>
+
+<!-- ============ PAGE 11 — CHAP 2 ============ -->
+<section class="kz-page">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 02 · Suite</span>
+    <h2 class="kz-h2">Comment ça marche, concrètement.</h2>
+    <p class="kz-p">Voici le processus, étape par étape, en 30 secondes :</p>
+    <div class="kz-illu">
+      <svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%;">
+        <g><circle cx="80" cy="100" r="45" fill="#5BA8D4" opacity="0.15"/><circle cx="80" cy="100" r="22" fill="#5BA8D4"/><text x="80" y="106" text-anchor="middle" fill="white" font-size="14" font-weight="700">H₂</text><text x="80" y="170" text-anchor="middle" fill="#0E0E0E" font-size="11" font-family="Inter">1. Vous buvez</text></g>
+        <line x1="135" y1="100" x2="175" y2="100" stroke="#5BA8D4" stroke-width="2" stroke-dasharray="3 3"/>
+        <g><circle cx="220" cy="100" r="45" fill="#5BA8D4" opacity="0.15"/><circle cx="220" cy="100" r="22" fill="#1A4A5F"/><text x="220" y="170" text-anchor="middle" fill="#0E0E0E" font-size="11" font-family="Inter">2. Sang &amp; cellules</text></g>
+        <line x1="275" y1="100" x2="315" y2="100" stroke="#5BA8D4" stroke-width="2" stroke-dasharray="3 3"/>
+        <g><circle cx="380" cy="100" r="50" fill="#C9342B" opacity="0.2"/><polygon points="370,90 385,80 395,95 380,110" fill="#C9342B"/><text x="380" y="170" text-anchor="middle" fill="#0E0E0E" font-size="11" font-family="Inter">3. Neutralise radicaux</text></g>
+        <line x1="430" y1="100" x2="475" y2="100" stroke="#5BA8D4" stroke-width="2" stroke-dasharray="3 3"/>
+        <g><circle cx="530" cy="100" r="35" fill="none" stroke="#5BA8D4" stroke-width="2"/><circle cx="525" cy="95" r="3" fill="#5BA8D4"/><circle cx="540" cy="105" r="3" fill="#5BA8D4"/><circle cx="530" cy="115" r="3" fill="#5BA8D4"/><text x="530" y="170" text-anchor="middle" fill="#0E0E0E" font-size="11" font-family="Inter">4. Eau (H₂O)</text></g>
+        <text x="300" y="240" text-anchor="middle" fill="#5A5A5A" font-size="13" font-family="Inter" font-style="italic">Aucun déchet. Aucun effet secondaire. Juste de l'eau.</text>
+      </svg>
+    </div>
+    <ul class="kz-list">
+      <li><strong>Étape 1 :</strong> vous buvez votre eau enrichie (4 verres répartis dans la journée).</li>
+      <li><strong>Étape 2 :</strong> en 90 secondes, l'H₂ atteint le sang puis chaque cellule.</li>
+      <li><strong>Étape 3 :</strong> il identifie et neutralise les radicaux libres dangereux.</li>
+      <li><strong>Étape 4 :</strong> il se transforme en eau et est éliminé naturellement.</li>
+    </ul>
+    <p class="kz-p">Aucune accumulation. Aucune toxicité connue, même à très haute dose. C'est ce qui fait de l'hydrogène <strong>l'antioxydant le plus sûr jamais étudié</strong>.</p>
+  </div>
+  <span class="kz-page__number">11</span>
+</section>
+
+<!-- ============ PAGE 12 — CHAP 2 FIN ============ -->
+<section class="kz-page">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 02 · Conclusion</span>
+    <h2 class="kz-h2">Ce que vous devez retenir.</h2>
+    <ul class="kz-checklist">
+      <li>L'hydrogène moléculaire est <strong>la plus petite molécule connue</strong> — elle pénètre partout dans le corps.</li>
+      <li>Il <strong>cible uniquement les radicaux libres dangereux</strong>, sans toucher aux molécules utiles.</li>
+      <li><strong>1 500+ études</strong> peer-reviewed depuis 2007 montrent des bénéfices sur 170 conditions différentes.</li>
+      <li>Aucune toxicité connue, aucun effet secondaire reporté à doses normales.</li>
+      <li>Le Japon et les USA l'utilisent depuis 15 ans. La France découvre.</li>
+    </ul>
+    <div class="kz-callout">
+      <div class="kz-callout__title">Honnêtement</div>
+      <p class="kz-callout__body">Si on me demandait <strong>une seule chose</strong> à ajouter dans ma routine pour vieillir mieux, je dirais sans hésiter : <em>l'hydrogène moléculaire au quotidien</em>. Pas parce que je le vends. Parce que je le bois moi-même tous les matins depuis 18 mois.</p>
+    </div>
+    <p class="kz-p">Dans les chapitres suivants, on entre dans le concret : <strong>énergie, sport, sommeil, focus, douleurs</strong>. Voici ce que vous pouvez attendre, bénéfice par bénéfice.</p>
+  </div>
+  <span class="kz-page__number">12</span>
+</section>
+
+<!-- ============ CHAPITRE 3 — ÉNERGIE & SPORT ============ -->
+<section class="kz-page kz-page--dark" id="chap3">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 03</span>
+    <h2 class="kz-h1">Énergie cellulaire & récupération sportive.</h2>
+    <div class="kz-divider"></div>
+    <p class="kz-lead">Si vous cherchez le bénéfice <strong>le plus rapidement perceptible</strong> de l'hydrogène, c'est celui-là. La majorité de nos clients sentent une différence sur leur énergie en 7 à 14 jours.</p>
+    <h3 class="kz-h3">Pourquoi vous êtes fatigué en permanence ?</h3>
+    <p class="kz-p">Vous dormez 7-8h, vous mangez correctement, et pourtant à 14h vous êtes vidé. À 17h, vous voulez juste rentrer chez vous et ne plus parler à personne. Le week-end, vous avez besoin de récupérer du week-end.</p>
+    <p class="kz-p">Ce n'est pas vous. C'est <strong>vos mitochondries qui s'épuisent.</strong></p>
+    <p class="kz-p">Les mitochondries, ce sont les <em>centrales énergétiques</em> de chacune de vos cellules. Elles transforment le glucose et l'oxygène en ATP — votre carburant biologique. Quand elles fonctionnent bien, vous avez de l'énergie qui dure. Quand elles s'oxydent, votre énergie devient instable, en dents de scie.</p>
+  </div>
+  <span class="kz-page__number">13</span>
+</section>
+
+<!-- ============ PAGE 14 — CHAP 3 ============ -->
+<section class="kz-page kz-page--dark">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 03 · Suite</span>
+    <h2 class="kz-h2">Ce que l'hydrogène fait à votre énergie.</h2>
+    <p class="kz-p">L'H₂ pénètre directement dans vos mitochondries (la plupart des autres antioxydants ne peuvent pas), et y nettoie les radicaux libres qui les abîment.</p>
+    <p class="kz-p">Résultat mesurable :</p>
+    <ul class="kz-list">
+      <li><strong>Énergie qui tient jusqu'au soir</strong> sans le crash de 14h.</li>
+      <li><strong>Réveil plus net</strong>, sans avoir besoin de 3 cafés pour démarrer.</li>
+      <li><strong>Moins de coups de fatigue</strong> en milieu d'après-midi.</li>
+      <li><strong>Endurance mentale prolongée</strong> en fin de semaine.</li>
+    </ul>
+    <div class="kz-stat">
+      <div class="kz-stat__number">+27%</div>
+      <div class="kz-stat__label">d'amélioration de l'endurance dans une étude de 2017 sur des athlètes</div>
+    </div>
+    <h3 class="kz-h3">Témoignage type</h3>
+    <div class="kz-quote">
+      « Je l'utilise surtout après le sport et aussi au bureau. Le gros point positif pour moi c'est l'énergie plus constante. Moins de fatigue en milieu d'après-midi. »
+      <span class="kz-quote__author">— Karim B., client Kayzen</span>
+    </div>
+  </div>
+  <span class="kz-page__number">14</span>
+</section>
+
+<!-- ============ PAGE 15 — CHAP 3 SPORT ============ -->
+<section class="kz-page kz-page--dark">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 03 · Performance</span>
+    <h2 class="kz-h2">Sport : comment l'H₂ change la donne.</h2>
+    <p class="kz-p">Si vous êtes sportif (même amateur), vous avez vécu ça mille fois : <strong>une bonne séance, des courbatures pendant 3 jours, et une motivation qui s'effrite à mesure que les blessures s'accumulent.</strong></p>
+    <p class="kz-p">L'effort intense produit une <em>tempête de radicaux libres</em>. C'est physiologique : c'est ce qui crée l'inflammation post-effort, les courbatures, et les micro-lésions qui mettent du temps à cicatriser.</p>
+    <h3 class="kz-h3">Ce que change l'hydrogène moléculaire</h3>
+    <ul class="kz-list">
+      <li><strong>Récupération musculaire 30-50% plus rapide</strong> — vous enchaînez les séances sans casser.</li>
+      <li><strong>Moins d'acide lactique</strong> qui s'accumule pendant l'effort.</li>
+      <li><strong>Diminution des courbatures</strong> dès J+1 après un effort intense.</li>
+      <li><strong>Endurance prolongée</strong> sur les efforts longs (course, vélo, trail).</li>
+      <li><strong>Moins de blessures à répétition</strong> grâce à une meilleure réparation tissulaire.</li>
+    </ul>
+    <div class="kz-quote">
+      « Étant en préparation pour le marathon de Paris, cela me permet d'enchaîner les entraînements sans blessure. Bonne découverte je ne connaissais pas les effets de l'hydrogène avant mon achat. »
+      <span class="kz-quote__author">— Pierre R., marathonien, client Kayzen</span>
+    </div>
+  </div>
+  <span class="kz-page__number">15</span>
+</section>
+
+<!-- ============ PAGE 16 — CHAP 3 ============ -->
+<section class="kz-page kz-page--dark">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 03 · Données</span>
+    <h2 class="kz-h2">Ce que disent les études sur le sport.</h2>
+    <div class="kz-study">
+      <span class="kz-study__tag">Étude japonaise · 2012</span>
+      <h4 class="kz-study__title">Boire 1,5 L d'eau hydrogénée par jour réduit significativement la lactacidémie après un effort maximal</h4>
+      <p class="kz-study__source">Aoki et al., Medical Gas Research, 2012 · n=10 athlètes universitaires</p>
+    </div>
+    <div class="kz-study">
+      <span class="kz-study__tag">Étude italienne · 2017</span>
+      <h4 class="kz-study__title">Amélioration de l'endurance et diminution des marqueurs de stress oxydatif chez 52 cyclistes</h4>
+      <p class="kz-study__source">Botek et al., Journal of Strength and Conditioning Research</p>
+    </div>
+    <div class="kz-study">
+      <span class="kz-study__tag">Méta-analyse · 2020</span>
+      <h4 class="kz-study__title">Effets bénéfiques sur la performance et la récupération dans 13 essais cliniques cumulés</h4>
+      <p class="kz-study__source">Hong et al., Antioxidants Journal</p>
+    </div>
+    <div class="kz-callout">
+      <div class="kz-callout__title">Pour les sportifs</div>
+      <p class="kz-callout__body">Si vous cherchez UN seul ajout à votre routine sportive cette année qui aura un impact mesurable, l'hydrogène moléculaire est probablement le plus efficient. <strong>Aucun complément, aucun BCAA, aucune routine de stretching ne produit cette amplitude de récupération.</strong></p>
+    </div>
+  </div>
+  <span class="kz-page__number">16</span>
+</section>
+
+<!-- ============ PAGE 17 — CHAP 3 FIN ============ -->
+<section class="kz-page kz-page--dark">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 03 · À retenir</span>
+    <h2 class="kz-h2">Récap énergie & sport.</h2>
+    <ul class="kz-checklist">
+      <li><strong>Énergie cellulaire restaurée</strong> en agissant directement dans vos mitochondries.</li>
+      <li><strong>Fin du crash de 14h</strong> — énergie stable du matin au soir.</li>
+      <li><strong>Récupération sportive accélérée</strong> de 30 à 50 % selon les études.</li>
+      <li><strong>Diminution mesurable</strong> de l'acide lactique et de l'inflammation post-effort.</li>
+      <li><strong>Délai d'effet ressenti :</strong> 7 à 14 jours pour la majorité des utilisateurs.</li>
+    </ul>
+    <div class="kz-quote">
+      « J'ai remplacé mon café par l'eau à l'hydrogène : depuis, plus aucun crash l'après-midi. À essayer. »
+      <span class="kz-quote__author">— Batiste O., client Kayzen</span>
+    </div>
+  </div>
+  <span class="kz-page__number">17</span>
+</section>
+
+<!-- ============ CHAPITRE 4 — SOMMEIL ============ -->
+<section class="kz-page" id="chap4">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 04</span>
+    <h2 class="kz-h1">Sommeil profond & système nerveux.</h2>
+    <div class="kz-divider"></div>
+    <p class="kz-lead">Le sommeil n'est pas un état passif. C'est <strong>le moment où votre cerveau se nettoie, où vos cellules se réparent, où votre système immunitaire se recharge</strong>. Le saboter, c'est saboter tout le reste.</p>
+    <p class="kz-p">Or, 1 Français sur 3 se déclare insatisfait de son sommeil. Pourquoi ? Parce que <strong>le stress chronique a brisé l'axe HPA</strong> (l'axe qui régule votre cortisol), et que les radicaux libres en surnombre attaquent les neurones de votre horloge biologique.</p>
+    <h3 class="kz-h3">Le piège de l'insomnie moderne</h3>
+    <p class="kz-p">Vous êtes épuisé physiquement le soir. Mais à 23h, votre cerveau s'allume. Les pensées tournent. Vous mettez 2h à vous endormir. Vous vous réveillez à 3h, persuadé d'avoir oublié quelque chose. Le matin, vous vous levez plus fatigué que la veille.</p>
+    <p class="kz-p">Ce n'est pas un problème de "techniques de relaxation". C'est un problème <strong>biologique</strong>.</p>
+  </div>
+  <span class="kz-page__number">18</span>
+</section>
+
+<!-- ============ PAGE 19 — CHAP 4 ============ -->
+<section class="kz-page">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 04 · Suite</span>
+    <h2 class="kz-h2">Pourquoi l'hydrogène améliore le sommeil.</h2>
+    <p class="kz-p">3 mécanismes documentés par la recherche :</p>
+    <h3 class="kz-h3">1 · Réduction du cortisol nocturne</h3>
+    <p class="kz-p">L'inflammation chronique maintient votre cortisol élevé même à 23h. L'H₂ neutralise les radicaux libres responsables, ce qui aide votre corps à <strong>basculer plus naturellement en mode parasympathique</strong> (le mode "repos & digestion").</p>
+    <h3 class="kz-h3">2 · Protection des neurones du sommeil</h3>
+    <p class="kz-p">Votre noyau suprachiasmatique (l'horloge biologique du cerveau) est ultra-sensible à l'oxydation. L'hydrogène traverse la barrière hémato-encéphalique et le protège directement.</p>
+    <h3 class="kz-h3">3 · Amélioration du sommeil profond</h3>
+    <p class="kz-p">Plusieurs études japonaises ont mesuré une <strong>augmentation du sommeil profond (stade N3)</strong> chez les utilisateurs d'eau hydrogénée — c'est ce sommeil-là qui régénère vraiment.</p>
+    <div class="kz-stat">
+      <div class="kz-stat__number">+18%</div>
+      <div class="kz-stat__label">d'augmentation du sommeil profond mesurée par polysomnographie</div>
+    </div>
+  </div>
+  <span class="kz-page__number">19</span>
+</section>
+
+<!-- ============ PAGE 20 — CHAP 4 ============ -->
+<section class="kz-page">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 04 · Études</span>
+    <h2 class="kz-h2">Études cliniques sur le sommeil.</h2>
+    <div class="kz-study">
+      <span class="kz-study__tag">Tokyo · 2018</span>
+      <h4 class="kz-study__title">Amélioration de la qualité du sommeil chez 26 adultes sur 4 semaines de supplémentation H₂</h4>
+      <p class="kz-study__source">Mizuno et al., Medical Gas Research</p>
+    </div>
+    <div class="kz-study">
+      <span class="kz-study__tag">Anxiété & stress</span>
+      <h4 class="kz-study__title">Effet anxiolytique et amélioration de l'humeur en 4 semaines (échelle SDS validée)</h4>
+      <p class="kz-study__source">Mizuno et al., 2017</p>
+    </div>
+    <div class="kz-study">
+      <span class="kz-study__tag">Cortisol</span>
+      <h4 class="kz-study__title">Diminution significative du cortisol salivaire après 4 semaines d'eau hydrogénée</h4>
+      <p class="kz-study__source">Trivic et al., 2017 — Journal of Translational Medicine</p>
+    </div>
+    <div class="kz-quote">
+      « J'avais de graves problèmes d'insomnie, et peu importe ce que je mettais en place impossible d'améliorer la situation. Je dors à nouveau bien mes nuits enfin et je suis à nouveau pleine d'énergie. »
+      <span class="kz-quote__author">— Fabienne M., cliente Kayzen</span>
+    </div>
+  </div>
+  <span class="kz-page__number">20</span>
+</section>
+
+<!-- ============ PAGE 21 — CHAP 4 FIN ============ -->
+<section class="kz-page">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 04 · À retenir</span>
+    <h2 class="kz-h2">Récap sommeil.</h2>
+    <ul class="kz-checklist">
+      <li><strong>Endormissement plus rapide</strong> grâce au passage en mode parasympathique facilité.</li>
+      <li><strong>Sommeil profond augmenté</strong> de 15-20% selon les mesures polysomnographiques.</li>
+      <li><strong>Réveils nocturnes réduits</strong> par la diminution du cortisol.</li>
+      <li><strong>Réveil plus net le matin</strong>, avec moins d'inertie.</li>
+      <li><strong>Délai d'effet ressenti :</strong> 14 à 28 jours pour la plupart des utilisateurs.</li>
+    </ul>
+    <div class="kz-callout">
+      <div class="kz-callout__title">Conseil pratique</div>
+      <p class="kz-callout__body">Pour optimiser l'effet sommeil : <strong>buvez votre dernier verre d'eau hydrogénée 60 à 90 minutes avant de vous coucher.</strong> C'est le timing optimal pour bénéficier de la baisse de cortisol au moment de l'endormissement.</p>
+    </div>
+  </div>
+  <span class="kz-page__number">21</span>
+</section>
+
+<!-- ============ CHAPITRE 5 — CLARTÉ MENTALE ============ -->
+<section class="kz-page kz-page--dark" id="chap5">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 05</span>
+    <h2 class="kz-h1">Clarté mentale & focus stable.</h2>
+    <div class="kz-divider"></div>
+    <p class="kz-lead">Vous lisez la même phrase 3 fois sans la comprendre. Vous ouvrez 12 onglets sans savoir pourquoi. Vous oubliez ce que vous alliez faire en passant d'une pièce à l'autre.</p>
+    <p class="kz-p">Ce <strong>brouillard mental</strong>, comme on l'appelle, n'est pas une fatalité de l'âge ou du stress. C'est <strong>une signature biologique</strong> que la science a identifié.</p>
+    <h3 class="kz-h3">Pourquoi votre cerveau est si sensible à l'oxydation</h3>
+    <p class="kz-p">Votre cerveau pèse 2 % de votre poids. Et pourtant il consomme <strong>20 % de votre oxygène</strong>. Conséquence directe : il est l'organe le plus exposé au stress oxydatif de tout votre corps.</p>
+    <p class="kz-p">À cela s'ajoute un autre problème : <strong>la barrière hémato-encéphalique</strong>. C'est un filtre qui protège votre cerveau, mais qui empêche la majorité des antioxydants classiques d'y pénétrer. La vitamine C ? Elle reste dans le sang. Le glutathion ? Idem. Le coenzyme Q10 ? Difficile.</p>
+    <p class="kz-p"><strong>L'hydrogène moléculaire, lui, traverse cette barrière comme si elle n'existait pas.</strong></p>
+  </div>
+  <span class="kz-page__number">22</span>
+</section>
+
+<!-- ============ PAGE 23 — CHAP 5 ============ -->
+<section class="kz-page kz-page--dark">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 05 · Suite</span>
+    <h2 class="kz-h2">Ce que ça change concrètement.</h2>
+    <ul class="kz-list">
+      <li><strong>Concentration prolongée</strong> sur des tâches de fond (3-6 heures de focus stable au lieu d'1h).</li>
+      <li><strong>Mémoire de travail améliorée</strong> — vous retenez les détails des conversations, des chiffres, des idées.</li>
+      <li><strong>Moins de "blanc cognitif"</strong> au moment de prendre la parole en réunion.</li>
+      <li><strong>Lecture plus fluide</strong>, sans avoir à relire chaque paragraphe.</li>
+      <li><strong>Apprentissage accéléré</strong> — vous absorbez les nouvelles informations plus vite.</li>
+    </ul>
+    <div class="kz-stat">
+      <div class="kz-stat__number">+25%</div>
+      <div class="kz-stat__label">de performance cognitive mesurée sur tests standardisés</div>
+    </div>
+    <div class="kz-quote">
+      « Je pensais que ça allait surtout jouer sur l'énergie, mais chez moi c'est surtout le focus qui a changé. Moins de problèmes de concentration. »
+      <span class="kz-quote__author">— Julien L., client Kayzen</span>
+    </div>
+  </div>
+  <span class="kz-page__number">23</span>
+</section>
+
+<!-- ============ PAGE 24 — CHAP 5 ============ -->
+<section class="kz-page kz-page--dark">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 05 · Études</span>
+    <h2 class="kz-h2">Recherches sur le cerveau.</h2>
+    <div class="kz-study">
+      <span class="kz-study__tag">Neuroprotection</span>
+      <h4 class="kz-study__title">L'hydrogène traverse la barrière hémato-encéphalique en moins de 5 minutes après ingestion</h4>
+      <p class="kz-study__source">Nagata et al., Brain Research, 2009</p>
+    </div>
+    <div class="kz-study">
+      <span class="kz-study__tag">Cognition</span>
+      <h4 class="kz-study__title">Amélioration de la mémoire à court terme et de l'attention soutenue chez les seniors</h4>
+      <p class="kz-study__source">Nishimaki et al., 2018 — Curr Alzheimer Res</p>
+    </div>
+    <div class="kz-study">
+      <span class="kz-study__tag">Maladies neurodégénératives</span>
+      <h4 class="kz-study__title">Effets neuroprotecteurs sur des modèles animaux de Parkinson et Alzheimer</h4>
+      <p class="kz-study__source">Multiples études compilées 2010-2020 — méta-analyse Ohta 2020</p>
+    </div>
+    <div class="kz-callout">
+      <div class="kz-callout__title">Pour les CSP+ exigeants</div>
+      <p class="kz-callout__body">Si votre travail exige <strong>de la concentration prolongée et de la prise de décision rapide</strong>, l'hydrogène moléculaire est le seul antioxydant connu qui agit directement dans le tissu cérébral. Aucun autre supplément ne peut prétendre à ça.</p>
+    </div>
+  </div>
+  <span class="kz-page__number">24</span>
+</section>
+
+<!-- ============ PAGE 25 — CHAP 5 FIN ============ -->
+<section class="kz-page kz-page--dark">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 05 · À retenir</span>
+    <h2 class="kz-h2">Récap clarté mentale.</h2>
+    <ul class="kz-checklist">
+      <li><strong>Focus stable 6h+</strong> au lieu d'1h hachée par les distractions.</li>
+      <li><strong>Mémoire de travail améliorée</strong> dans les contextes professionnels exigeants.</li>
+      <li><strong>Brouillard mental réduit</strong>, surtout en fin de journée.</li>
+      <li><strong>Neuroprotection à long terme</strong> sur les fonctions cognitives.</li>
+      <li><strong>Délai d'effet :</strong> 7 à 21 jours selon les profils.</li>
+    </ul>
+    <div class="kz-quote">
+      « Je l'utilise surtout le matin avant de commencer à travailler. Je me sens plus clair, moins dispersé. Bonne surprise. »
+      <span class="kz-quote__author">— Maxime L., client Kayzen</span>
+    </div>
+  </div>
+  <span class="kz-page__number">25</span>
+</section>
+
+<!-- ============ CHAPITRE 6 — ARTICULATIONS ============ -->
+<section class="kz-page" id="chap6">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 06</span>
+    <h2 class="kz-h1">Confort articulaire & mobilité.</h2>
+    <div class="kz-divider"></div>
+    <p class="kz-lead">À 30 ans, vous descendiez les escaliers à toute allure. À 45, vous y pensez à deux fois. À 55, vous évitez. Pourquoi ?</p>
+    <p class="kz-p">Pas parce que vous êtes "vieux". Parce que vos articulations sont <strong>chroniquement enflammées</strong> par l'oxydation cumulée pendant des décennies.</p>
+    <h3 class="kz-h3">L'inflammation : le vrai coupable</h3>
+    <p class="kz-p">L'arthrose, la polyarthrite, les tendinites à répétition, les lombalgies chroniques — toutes partagent un point commun : <strong>un excès d'oxydation au niveau des tissus articulaires et tendineux</strong>.</p>
+    <p class="kz-p">Quand les radicaux libres s'accumulent dans le cartilage, ils détruisent progressivement les protéoglycanes (les molécules qui donnent l'élasticité). Le cartilage s'amincit. Les os frottent. La douleur apparaît.</p>
+    <p class="kz-p">L'hydrogène moléculaire ne "régénère" pas magiquement le cartilage. Mais <strong>il interrompt le processus inflammatoire qui le détruit</strong>. C'est déjà énorme.</p>
+  </div>
+  <span class="kz-page__number">26</span>
+</section>
+
+<!-- ============ PAGE 27 — CHAP 6 ============ -->
+<section class="kz-page">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 06 · Suite</span>
+    <h2 class="kz-h2">Ce que disent les études articulaires.</h2>
+    <div class="kz-study">
+      <span class="kz-study__tag">Polyarthrite rhumatoïde</span>
+      <h4 class="kz-study__title">Réduction significative des marqueurs inflammatoires (CRP, IL-6) en 4 semaines chez 20 patients</h4>
+      <p class="kz-study__source">Ishibashi et al., Medical Gas Research, 2012</p>
+    </div>
+    <div class="kz-study">
+      <span class="kz-study__tag">Arthrose</span>
+      <h4 class="kz-study__title">Diminution de la douleur et amélioration de la mobilité chez 60 patients avec arthrose du genou</h4>
+      <p class="kz-study__source">Étude clinique japonaise multicentrique 2018</p>
+    </div>
+    <div class="kz-study">
+      <span class="kz-study__tag">Inflammation chronique</span>
+      <h4 class="kz-study__title">L'H₂ régule à la baisse les gènes pro-inflammatoires NF-κB dans plusieurs tissus</h4>
+      <p class="kz-study__source">Itoh et al., 2009 — Biochemical and Biophysical Research</p>
+    </div>
+    <div class="kz-quote">
+      « Acheté pour mon arthrose du genou et c'est FORMIDABLE. On devrait plus parler de vous, je l'ai conseillé à 2 amies. »
+      <span class="kz-quote__author">— Hélène D., 67 ans, cliente Kayzen</span>
+    </div>
+    <div class="kz-quote">
+      « Pour la polyarthrite c'est royal ! »
+      <span class="kz-quote__author">— Flora M., cliente Kayzen</span>
+    </div>
+  </div>
+  <span class="kz-page__number">27</span>
+</section>
+
+<!-- ============ PAGE 28 — CHAP 6 FIN ============ -->
+<section class="kz-page">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 06 · À retenir</span>
+    <h2 class="kz-h2">Récap articulations.</h2>
+    <ul class="kz-checklist">
+      <li><strong>Réduction de la douleur articulaire</strong> mesurée chez les patients d'arthrose et polyarthrite.</li>
+      <li><strong>Diminution des marqueurs inflammatoires</strong> CRP et IL-6 sur 4 semaines.</li>
+      <li><strong>Mobilité améliorée</strong>, en particulier au réveil (raideur matinale).</li>
+      <li><strong>Récupération post-effort accélérée</strong> pour les sportifs ayant des microtraumatismes répétés.</li>
+      <li><strong>Délai d'effet :</strong> 21 à 45 jours pour des bénéfices ressentis sur les douleurs chroniques.</li>
+    </ul>
+    <div class="kz-callout">
+      <div class="kz-callout__title">Important</div>
+      <p class="kz-callout__body">L'hydrogène moléculaire <strong>ne remplace aucun traitement médical</strong>. C'est un adjuvant nutritionnel. Si vous avez une pathologie chronique, parlez-en à votre médecin avant d'intégrer Kayzen à votre routine.</p>
+    </div>
+  </div>
+  <span class="kz-page__number">28</span>
+</section>
+
+<!-- ============ CHAPITRE 7 — RITUEL ============ -->
+<section class="kz-page kz-page--dark" id="chap7">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">Chapitre 07</span>
+    <h2 class="kz-h1">Le Rituel Kayzen.</h2>
+    <div class="kz-divider"></div>
+    <p class="kz-lead">Vous avez maintenant compris l'essentiel. La question n'est plus <em>"est-ce que ça marche"</em>. La question est <strong>"comment je l'intègre dans ma vie quotidienne"</strong>.</p>
+    <h3 class="kz-h3">Le protocole en 4 étapes</h3>
+    <ul class="kz-list">
+      <li><strong>1 · Au réveil, à jeun.</strong> Premier verre dans les 5 minutes après votre cycle. Active votre métabolisme et nettoie l'oxydation accumulée pendant la nuit.</li>
+      <li><strong>2 · 1h avant le sport ou en milieu de matinée.</strong> Soutient votre énergie sur l'effort et la concentration prolongée.</li>
+      <li><strong>3 · Après le sport ou en milieu d'après-midi.</strong> Combat le stress oxydatif induit par l'effort, prévient le crash de 14h.</li>
+      <li><strong>4 · 60-90 minutes avant le coucher.</strong> Aide à basculer en mode parasympathique et améliore le sommeil profond.</li>
+    </ul>
+    <p class="kz-p"><strong>4 verres par jour. 5 minutes de cycle à chaque fois. C'est tout.</strong></p>
+  </div>
+  <span class="kz-page__number">29</span>
+</section>
+
+<!-- ============ PAGE 30 — CTA FINAL ============ -->
+<section class="kz-page kz-page--dark">
+  <div class="kz-page__inner">
+    <span class="kz-pretitle">La décision est entre vos mains</span>
+    <h2 class="kz-h1">Ce que vous faites de cette information.</h2>
+    <div class="kz-divider"></div>
+    <p class="kz-lead">Vous avez lu 30 pages. Vous savez ce qu'est l'hydrogène moléculaire, ce qu'il fait, et pourquoi 1 500 études convergent vers la même conclusion.</p>
+    <p class="kz-p"><strong>Maintenant vous avez deux options.</strong></p>
+    <p class="kz-p"><strong>Option 1 :</strong> vous fermez ce guide, vous reprenez votre vie comme avant. Dans 5 ans, vous serez là où vous êtes maintenant + l'oxydation cumulée. Probablement un peu plus fatigué. Un peu plus douloureux. Un peu plus lent.</p>
+    <p class="kz-p"><strong>Option 2 :</strong> vous testez Kayzen pendant 60 jours. Si vous ne sentez aucune différence, je vous rembourse intégralement. Si vous en sentez une, vous avez ajouté un outil de plus dans votre arsenal pour bien vieillir.</p>
+    <div class="kz-quote">
+      « Je n'ai pas créé Kayzen pour vous vendre un gadget. Je l'ai créé parce que j'ai compté trop de tombes pour mon âge — et que je crois profondément qu'on peut prévenir au lieu d'enterrer. »
+      <span class="kz-quote__author">— Yori, fondateur Kayzen</span>
+    </div>
+    <div class="kz-cta-box">
+      <h3 class="kz-cta-box__title">Découvrez Kayzen Origin</h3>
+      <p class="kz-cta-box__sub">60 jours d'essai · Garantie à vie · Livraison offerte sous 24h</p>
+      <a href="https://kayzenwater.com/products/kayzen-origin" class="kz-cta-box__button" target="_blank">
+        Commencer mon rituel →
+      </a>
+    </div>
+    <div class="kz-signature">
+      <div class="kz-signature__name">Yori</div>
+      <div class="kz-signature__role">Fondateur Kayzen · Mai 2026</div>
+    </div>
+  </div>
+  <span class="kz-page__number">30</span>
+</section>
+
+<script>
+  // Progress bar au scroll
+  const progressBar = document.getElementById('progressBar');
+  window.addEventListener('scroll', () => {
+    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrolled = (window.scrollY / scrollHeight) * 100;
+    progressBar.style.width = scrolled + '%';
+  });
+</script>
+
+</body>
+</html>
